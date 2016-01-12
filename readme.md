@@ -1,11 +1,11 @@
-# InstagramApi
+# InstagramAPI
 
 Basic Instagram API access (without access_token).
 
 ## Usage
 
 ```PHP
-$instagramAPI = new InstagramAPI($clientId, $clientSecret);
+$instagramAPI = new InstagramAPI($clientID, $clientSecret);
 
 $arguments = array(
     'count' => 10
