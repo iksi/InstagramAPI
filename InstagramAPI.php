@@ -10,19 +10,17 @@
 
 namespace Iksi;
 
-class InstagramAPI
-{
-    protected $clientId;
+class InstagramAPI {
+
+    protected $clientID;
     protected $clientSecret;
 
-    public function __construct($clientId, $clientSecret)
-    {
-        $this->clientId = $clientId;
+    public function __construct($clientID, $clientSecret) {
+        $this->clientId = $clientID;
         $this->clientSecret = $clientSecret;
     }
 
-    protected function fetch($url, $header)
-    {
+    protected function fetch($url, $header) {
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -40,9 +38,8 @@ class InstagramAPI
             : false;
     }
 
-    public function request($resource, $arguments = array())
-    {
-        $arguments['client_id'] =  $this->clientId;
+    public function request($resource, $arguments = array()) {
+        $arguments['client_id'] =  $this->clientID;
 
         $url = 'https://api.instagram.com/v1/' . $resource . '?'
             . http_build_query($arguments);
