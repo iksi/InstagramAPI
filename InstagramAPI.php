@@ -16,7 +16,7 @@ class InstagramAPI {
     protected $clientSecret;
 
     public function __construct($clientID, $clientSecret) {
-        $this->clientId = $clientID;
+        $this->clientID = $clientID;
         $this->clientSecret = $clientSecret;
     }
 
