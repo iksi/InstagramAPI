@@ -1,6 +1,6 @@
 # InstagramAPI
 
-_Deprecated: Instagram now requires an access_token_
+**Deprecated: Instagram now requires an access_token**
 
 Basic Instagram API access (without access_token).
 
